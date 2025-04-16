@@ -21,6 +21,7 @@ const RegisterPage = () => {
             id={'namaLengkap'}
             type={'text'}
             name={'inputNamaLengkap'}
+            className={'w-full rounded-md'}
           />
           <InputField
             label={'Username'}
@@ -28,6 +29,7 @@ const RegisterPage = () => {
             id={'username'}
             type={'text'}
             name={'inputUsername'}
+            className={'w-full rounded-md'}
           />
           <InputField
             label={'Password'}
@@ -35,6 +37,7 @@ const RegisterPage = () => {
             id={'password'}
             type={'text'}
             name={'inputPassword'}
+            className={'w-full rounded-md'}
           />
           <InputField
             label={'Verify Password'}
@@ -42,16 +45,18 @@ const RegisterPage = () => {
             id={'verfyPassword'}
             type={'text'}
             name={'inputVerfyPassword'}
-            className={'mb-1'}
+            className={'mb-1 w-full rounded-md'}
           />
-          <Button type={'submit'}>REGISTER</Button>
+          <Button type={'submit'} className={'w-full rounded-md'}>
+            REGISTER
+          </Button>
         </form>
         <p className='text-sm text-center'>
           Sudah memiliki akun?{' '}
-          <Link to={'/'} className='text-green-950 font-bold'>
+          <Link to={'/login'} className='text-green-950 font-bold'>
             Masuk
           </Link>{' '}
-          untuk melanjutkan
+          untuk melanjutkan!
         </p>
       </div>
     </div>

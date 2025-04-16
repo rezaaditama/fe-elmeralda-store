@@ -21,6 +21,7 @@ const LoginPage = () => {
             id={'username'}
             type={'text'}
             name={'inputUsername'}
+            className={'w-full rounded-md'}
           />
           <InputField
             label={'Password'}
@@ -28,6 +29,7 @@ const LoginPage = () => {
             id={'password'}
             type={'password'}
             name={'inputPassword'}
+            className={'w-full rounded-md'}
           />
           <div className='flex w-full justify-between py-1'>
             <div className='flex items-center'>
@@ -41,7 +43,9 @@ const LoginPage = () => {
               Forgot Password?
             </Link>
           </div>
-          <Button type={'submit'}>SUBMIT</Button>
+          <Button type={'submit'} className={'w-full rounded-md'}>
+            SUBMIT
+          </Button>
         </form>
         <p className='text-sm text-center'>
           Belum memiliki akun?{' '}
